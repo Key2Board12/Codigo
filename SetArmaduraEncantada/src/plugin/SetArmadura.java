@@ -40,35 +40,36 @@ public class SetArmadura extends JavaPlugin implements Listener{
 		espadas.addEnchantment(Enchantment.DAMAGE_ALL, 5);
 		inv.addItem(espadas);
 
+		
+		
 		//PECHERA
 		ItemStack pechera = new ItemStack(Material.DIAMOND_CHESTPLATE);
 		ItemMeta pecheraMeta = pechera.getItemMeta();
 		pecheraMeta.setDisplayName(ChatColor.BLUE + "Pechera Legendaria " + p.getName());
 		pechera.setItemMeta(pecheraMeta);
 		pechera.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
-		inv.addItem(pechera);
+		inv.setChestplate(pechera);
 		
 		ItemStack casco = new ItemStack(Material.DIAMOND_HELMET);
 		ItemMeta cascoMeta = casco.getItemMeta();
 		cascoMeta.setDisplayName(ChatColor.GREEN + "Casco Legendaria " + p.getName());
 		casco.setItemMeta(cascoMeta);
 		casco.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
-		inv.addItem(casco);
+		inv.setHelmet(casco);
 		
 		ItemStack pantalones= new ItemStack(Material.DIAMOND_LEGGINGS);
 		ItemMeta pantalonesMeta = pantalones.getItemMeta();
 		pantalonesMeta.setDisplayName(ChatColor.RED + "Pantalones Legendarias " + p.getName());
 		pantalones.setItemMeta(pantalonesMeta);
 		pantalones.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
-		inv.addItem(pantalones);
+		inv.setLeggings(pantalones);
 		
 		ItemStack botas= new ItemStack(Material.DIAMOND_BOOTS);
 		ItemMeta botasMeta = botas.getItemMeta();
 		botasMeta.setDisplayName(ChatColor.DARK_AQUA + "Botas Legendarias " + p.getName());
 		botas.setItemMeta(botasMeta);
 		botas.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
-		inv.addItem(botas);
-
+		inv.setBoots(botas);
 
 
 	}
